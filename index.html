@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages 演示站点</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.5s ease;
+        }
+        
+        body:hover {
+            background: linear-gradient(135deg, #f5f7fa 0%, #b8c6db 100%);
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transform: translateY(0);
+            transition: all 0.3s ease;
+        }
+        
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #3498db;
+        }
+        
+        h1 {
+            color: #2980b9;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 10%;
+            width: 80%;
+            height: 3px;
+            background-color: #3498db;
+            border-radius: 3px;
+        }
+        
+        .content {
+            margin: 2rem 0;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+        
+        .feature-box {
+            background-color: #f8f9fa;
+            padding: 1.2rem;
+            border-radius: 8px;
+            width: 200px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-box h3 {
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #3498db;
+            transition: width 0.3s ease;
+        }
+        
+        a:hover::after {
+            width: 100%;
+        }
+        
+        .footer {
+            margin-top: 2.5rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">✓</div>
+        <h1>GitHub Pages 演示站点</h1>
+        
+        <div class="content">
+            <p>成功部署！这个页面展示了如何通过 GitHub Pages 托管静态网站。</p>
+            <p>GitHub Pages 提供免费的静态网站托管服务，非常适合展示项目、个人博客或作品集。</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-box">
+                <h3>简单易用</h3>
+                <p>只需推送代码，自动部署，无需复杂配置</p>
+            </div>
+            <div class="feature-box">
+                <h3>免费托管</h3>
+                <p>基础功能完全免费，支持自定义域名</p>
+            </div>
+            <div class="feature-box">
+                <h3>版本控制</h3>
+                <p>基于 Git 版本控制，轻松管理网站历史</p>
+            </div>
+        </div>
+        
+        <p>了解更多：<a href="https://pages.github.com/" target="_blank">GitHub Pages 官方文档</a></p>
+        
+        <div class="footer">
+            <p>最后更新：2025年11月 | 由 GitHub Pages 提供支持</p>
+        </div>
+    </div>
+</body>
+</html><!@DOC
+
